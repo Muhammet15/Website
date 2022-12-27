@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/montserrat/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/montserrat/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/montserrat/Montserrat-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/montserrat/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/montserrat/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+*{
+    font-family: "Montserrat",sans-serif;
+    box-sizing: border-box;
+    color: #424242;
+}
+body{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+}
+.app__header{
+    display: flex;
+    flex-direction: row; /*bu ikisi soldan sağa dizmek için*/
+    justify-content: space-between; /*uygun boşlukla yerleştiriyor*/
+    align-items: center;
+    height: 80px;
+}
+.app_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.app_logo .app__title{
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    width: 40%;
+    min-width: 350px;
+    height: auto;
+    
+}
+.app__links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+.app__links li{
+    margin-right: 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+.app__links li.active{
+    font-weight: 600;
+    font-size: 14;
+    color: #5A47AB;
+}
+
+.app__showcase{
+    display: flex;
+    margin: 5rem 0;
+}
+.app__showcase-info{
+    flex: 6;
+    padding: 0 3rem;
+}
+.app__showcase-info h1{
+    font-size: 52px;
+    margin: 0;
+    color:#D05270 ;
+    font-weight: bold;
+ }
+ .app__showcase-info h3{
+    font-size: 52px;
+    margin: 0;
+    font-weight: 500;
+ }
+ .app__showcase-info p{
+    font-size: 18px;
+    font-weight: 400;
+ }
+.app__showcase-image{
+    flex:4;
+    padding: 0 3rem;
+    
+}
+
+.app__links2{
+    display: flex ;
+    justify-content: space-between;
+    margin-top: 3rem;
+    
+}
+.app__links2 .app__link{
+    color: floralwhite;
+    font-size: 12px;
+    width: 30%;
+    height: 60px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__links2 .app__link.twitter{
+    background-color: #47acdf;
+}
+.app__links2 .app__link.linkedin{
+    background-color: #1275b1;
+}
+.app__links2 .app__link.medium{
+    background-color: #000;
+}
+.app__links2 .app__link img{
+    margin-right: 1.5rem;
+}
+.app__blog-catogories{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.app__blog-catogories .item{
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.app__blog-catogories .item.active{
+    color: #D05270;
+    font-size: 24;
+    font-weight: bold;
+    border-bottom: 1px solid #D05270;
+    padding: 0 2rem;
+ }
+ .app__listwrap{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+ }
+ .app__listwrap .app_postcard{
+    display: flex;
+    flex: 0 0 50%;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin: 2rem 0;
+ }
+ .app__listwrap .app_postcard .postimage{
+    height: 400px;
+    width: max-content;
+
+}
+ .app__listwrap .app_postcard .postdate{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+.app__listwrap .app_postcard .posttitle{
+    font-size: 24px;
+    font-weight: 600;
+    color: #D05270;
+    margin: 0.5rem 0;
+}
+.app__listwrap .app_postcard .postinfo{
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.app__listwrap .app_postcard .postlink{
+    font-size: 18px;
+    font-weight: 500;
+    color: #D05270;
+    text-decoration: none;
+    border-bottom: 1px solid #D05270;
+    padding-bottom: 0.5rem;
+    width: fit-content;
+    margin-top: 2rem;
+}
+
+.footer{
+    position: relative;
+    text-align: center;
+    margin: 5rem 0;
+}
