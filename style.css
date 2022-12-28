@@ -87,7 +87,7 @@ body{
     font-weight: bold;
  }
  .app__showcase-info h3{
-    font-size: 52px;
+    font-size: 42px;
     margin: 0;
     font-weight: 500;
  }
@@ -98,8 +98,16 @@ body{
 .app__showcase-image{
     flex:4;
     padding: 0 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 40%;
+    border-radius: 80%;
     
 }
+.app__showcase-image:hover {
+    opacity: 0.5;
+  }
 
 .app__links2{
     display: flex ;
@@ -129,6 +137,12 @@ body{
 .app__links2 .app__link img{
     margin-right: 1.5rem;
 }
+.menu__kapali{
+    display: none;
+}
+.menu__acik{
+    display: none;
+}
 .app__blog-catogories{
     list-style: none;
     display: flex;
@@ -156,7 +170,7 @@ body{
  }
  .app__listwrap .app_postcard{
     display: flex;
-    flex: 0 0 50%;
+    flex: 0 0 10%;
     flex-direction: column;
     padding: 0 2rem;
     margin: 2rem 0;
@@ -192,9 +206,73 @@ body{
     width: fit-content;
     margin-top: 2rem;
 }
-
+.bosluk{
+    display: none;
+}
 .footer{
     position: relative;
     text-align: center;
     margin: 5rem 0;
+}
+
+@media only screen and (max-width:850px){
+
+ body{
+    width: 90%;
+    margin: auto;
+ }
+ .app__links{
+  opacity: 0;
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  left: 0%;
+  top: 5rem;
+  z-index: -1;
+  flex-direction: column;
+  background-color: #FFFF;
+  transition: height 200ms ease-in-out;
+}
+
+.app__links.active{
+    opacity: 1;
+    display: block;   
+    z-index: 1; 
+   height: 100%;
+
+}
+.app__links li{
+padding: 1.5rem;
+font-size: 20px;
+ }
+ .menu__kapali{
+    display: block;
+ }
+ .app_logo .app__title{
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    display: block;
+    width: 40%;
+    min-width:270px;
+    height: auto;
+}
+.purple__logo{
+    display: none;
+}
+.app__showcase-image{
+   display: none;
+    
+}
+.bosluk{
+    display: block;
+}
+.app__showcase-info h1{
+    font-size: 40px;
+ }
+ .app__showcase-info h3{
+    font-size: 28px;
+ }
+ .app__showcase-info p{
+    font-size: 16px;
+ }
 }
