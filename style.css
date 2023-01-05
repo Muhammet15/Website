@@ -103,7 +103,6 @@ body{
     margin-right: auto;
     min-width: 40%;
     border-radius: 80%;
-    
 }
 .app__showcase-image:hover {
     opacity: 0.5;
@@ -125,14 +124,14 @@ body{
     justify-content: center;
     align-items: center;
 }
-.app__links2 .app__link.twitter{
-    background-color: #47acdf;
+.app__links2 .app__link.github{
+    background-color: #262727;
 }
 .app__links2 .app__link.linkedin{
     background-color: #1275b1;
 }
 .app__links2 .app__link.medium{
-    background-color: #000;
+    background-color: rgb(247, 89, 89);
 }
 .app__links2 .app__link img{
     margin-right: 1.5rem;
@@ -158,7 +157,7 @@ body{
 }
 .app__blog-catogories .item.active{
     color: #D05270;
-    font-size: 24;
+    font-size: 24px;
     font-weight: bold;
     border-bottom: 1px solid #D05270;
     padding: 0 2rem;
@@ -213,6 +212,32 @@ body{
     position: relative;
     text-align: center;
     margin: 5rem 0;
+}
+@media only screen and (max-width:1600px){
+
+    .app__listwrap .app_postcard .postimage{
+       height: 310px;
+   }
+   .app__listwrap .app_postcard .posttitle{
+       font-size: 22px;
+   }
+   .app__listwrap .app_postcard .postinfo{
+       font-weight: 400;
+       margin: 0.5rem 0;
+   }
+   
+   .app__listwrap .app_postcard .postlink{
+       font-size: 16px;
+       margin-top: 1.7rem;
+   }
+   .app__showcase-info{
+       flex: 5;
+       padding: 0 3rem;
+   }
+   .app__showcase-image{
+       flex:4;
+       border-radius: 100%;
+   }
 }
 
 @media only screen and (max-width:850px){
@@ -273,6 +298,63 @@ font-size: 20px;
     font-size: 28px;
  }
  .app__showcase-info p{
-    font-size: 16px;
+    font-size: 14px;
  }
+ .app__showcase{
+    display: flex;
+    margin: 5rem 0;
 }
+.app__showcase-info{
+    padding: 0;
+}
+.app__links2 .app__link{
+    color: floralwhite;
+    font-size: 12px;
+    font-weight: 500;
+    width: 30%;
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__links2 .app__link img{
+    margin-right: 0.3rem;
+}
+.app__blog-catogories{
+overflow-x: auto;
+padding: 0;
+}
+.app__blog-catogories .item{
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 0.4rem;
+    white-space: nowrap;
+}
+.app__blog-catogories .item.active{
+    font-size: 13px;
+ }
+ .app__listwrap .app_postcard{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin: 1rem 0;
+ }
+ .app__listwrap .app_postcard .postimage{
+    height: 200px;
+}
+ .app__listwrap .app_postcard .postdate{
+    font-size: 10px;
+    font-weight: 600;
+}
+.app__listwrap .app_postcard .posttitle{
+    font-size: 20px;
+}
+.app__listwrap .app_postcard .postinfo{
+  font-size: 14px;
+}
+.app__listwrap .app_postcard .postlink{
+    font-size: 14px;
+}
+}
+
