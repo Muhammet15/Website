@@ -15,4 +15,22 @@
     font-size: 16px;
 }
 
+@media only screen and (max-width:850px){
+    .containerr{
+        height: 100%;
+        width: 100%;
+        margin-top: 2.5rem;
+        display:block;
+        margin-left: 1.0rem;   
+    }
+    .imgsize{
+        margin-bottom: 1rem;
+        height: 280px;
+    }
+    .psize{
+        text-align: left;
+        font-size: 14px;
+        margin-right: 1rem;
+    }
+}
 

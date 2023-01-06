@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="./style.css" rel="stylesheet"></link>
-    <link href="./pages.css" rel="stylesheet"></link>
+    <link href="./contact.css" rel="stylesheet"></link>
+    <link href="./post_detail.css" rel="stylesheet"></link>
 </head>
 <body>
     <nav class="app__header">
@@ -32,7 +33,60 @@
     </nav>
     <main>
     <div class="containerr">
-  
+        <div class="background">
+            <div class="container">
+              <div class="screen">
+                <div class="screen-header">
+                  <div class="screen-header-left">
+                    <div class="screen-header-button close"></div>
+                    <div class="screen-header-button maximize"></div>
+                    <div class="screen-header-button minimize"></div>
+                  </div>
+                  <div class="screen-header-right">
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                  </div>
+                </div>
+                <div class="screen-body">
+                  <div class="screen-body-item left">
+                    <div class="app-title">
+                      <span style="color:#ea1d6f">İletişime</span>
+                      <span style="color:#ea1d6f">Geç</span>
+                    </div>
+                    <div class="app-contact">Tel : +90 531 285 30 58</div>
+                  </div>
+                  <div class="screen-body-item">
+                    <div class="app-form">
+                      <form method="post">
+                      <div class="app-form-group">
+                        <input class="app-form-control" type="text" id="name" placeholder="AD SOYAD"  autocomplete="off">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control"  type="email" id="email" placeholder="EMAİL" autocomplete="off">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" type="no" id="no" placeholder="İLETİŞİM NO" autocomplete="off">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" type="subject" id="subject" placeholder="KONU BAŞLIĞI" autocomplete="off">
+                      </div>
+                      <div class="app-form-group message">
+                        <textarea class="app-form-control" cols="20"  rows="5" id="message" placeholder="MESAJ"></textarea>
+                      </div>
+                      <div class="app-form-group buttons">
+                        <button  id="btncancel" class="app-form-button">CANCEL</button>
+                        <button  id="btnsend" class="app-form-button">SEND</button>
+                      </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
     </div>
     </main>
 
@@ -77,5 +131,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="./app.js" ></script>
+    <script src="./contact.js" ></script>
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
 </body>
 </html>
