@@ -27,6 +27,7 @@
     font-family: "Montserrat",sans-serif;
     box-sizing: border-box;
     color: #424242;
+    text-decoration: none;
 }
 body{
     width: 70%;
@@ -34,6 +35,7 @@ body{
     margin-right: auto;
     /* background-color: red; */
 }
+
 .app__header{
     display: flex;
     flex-direction: row; /*bu ikisi soldan sağa dizmek için*/
@@ -45,6 +47,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 .app_logo .app__title{
     margin-top: 0.5rem;
@@ -53,13 +56,11 @@ body{
     width: 40%;
     min-width: 350px;
     height: auto;
-    
 }
 .app__links{
     list-style: none;
     display: flex;
     flex-direction: row;
-
 }
 .app__links li{
     margin-right: 1.5rem;
@@ -104,15 +105,13 @@ body{
     min-width: 40%;
     border-radius: 80%;
 }
-.app__showcase-image:hover {
+/* .app__showcase-image:hover {
     opacity: 0.5;
-  }
-
+  } */
 .app__links2{
     display: flex ;
     justify-content: space-between;
-    margin-top: 3rem;
-    
+    margin-top: 3rem; 
 }
 .app__links2 .app__link{
     color: floralwhite;
@@ -127,11 +126,20 @@ body{
 .app__links2 .app__link.github{
     background-color: #262727;
 }
+.app__links2 .app__link.github:hover{
+    opacity: 0.7;
+}
 .app__links2 .app__link.linkedin{
     background-color: #1275b1;
 }
+.app__links2 .app__link.linkedin:hover{
+    opacity: 0.7;
+}
 .app__links2 .app__link.medium{
-    background-color: rgb(247, 89, 89);
+    background-color: rgb(240, 53, 53);
+}
+.app__links2 .app__link.medium:hover{
+    opacity: 0.7;
 }
 .app__links2 .app__link img{
     margin-right: 1.5rem;
@@ -147,7 +155,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 .app__blog-catogories .item{
     font-weight: 500;
@@ -175,7 +182,7 @@ body{
     margin: 2rem 0;
  }
  .app__listwrap .app_postcard .postimage{
-    height: 400px;
+    height: 300px;
     width: max-content;
 
 }
@@ -194,7 +201,6 @@ body{
     font-weight: 400;
     margin: 0.5rem 0;
 }
-
 .app__listwrap .app_postcard .postlink{
     font-size: 18px;
     font-weight: 500;
@@ -205,6 +211,10 @@ body{
     width: fit-content;
     margin-top: 2rem;
 }
+.app__listwrap .app_postcard .postlink:hover{
+    color: #eba3b3;
+    border-bottom: 1px solid #eba3b3;
+}
 .bosluk{
     display: none;
 }
@@ -214,61 +224,79 @@ body{
     margin: 5rem 0;
 }
 @media only screen and (max-width:1600px){
-
     .app__listwrap .app_postcard .postimage{
-       height: 310px;
+       height: 240px;
    }
    .app__listwrap .app_postcard .posttitle{
-       font-size: 22px;
+       font-size: 12px;
    }
    .app__listwrap .app_postcard .postinfo{
        font-weight: 400;
        margin: 0.5rem 0;
    }
-   
    .app__listwrap .app_postcard .postlink{
        font-size: 16px;
        margin-top: 1.7rem;
    }
+   .app__listwrap .app_postcard .postlink:hover{
+    color: #eba3b3;
+    border-bottom: 1px solid #eba3b3;
+}
    .app__showcase-info{
-       flex: 5;
+       flex: 6;
        padding: 0 3rem;
    }
-   .app__showcase-image{
-       flex:4;
-       border-radius: 100%;
-   }
+   .app__showcase-info h1{
+    font-size: 38px;
+    }
+    .app__showcase-info h3{
+        font-size: 29px;
+    }
+    .app__showcase-info p{
+        font-size: 16px;
+    }
+    .app__showcase-image{
+        flex:4;
+        border-radius: 100%;
+    }
 }
-
+@media only screen and (max-width:1500px){
+    .purple__logo{
+        display: none;
+    }
+    .app__showcase-image{
+       display: none;
+    }
+    .app__listwrap .app_postcard .postimage{
+        height: 190px;
+    }
+}
 @media only screen and (max-width:850px){
-
  body{
     width: 90%;
     margin: auto;
  }
  .app__links{
-  opacity: 0;
-  width: 100%;
-  height: 0%;
-  position: absolute;
-  left: 0%;
-  top: 5rem;
-  z-index: -1;
-  flex-direction: column;
-  background-color: #FFFF;
-  transition: height 200ms ease-in-out;
+    opacity: 0;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 0%;
+    top: 5rem;
+    z-index: -1;
+    flex-direction: column;
+    background-color: #FFFF;
+    transition: height 200ms ease-in-out;
 }
-
 .app__links.active{
     opacity: 1;
     display: block;   
     z-index: 1; 
-   height: 100%;
-
+    height: 100%;
 }
 .app__links li{
-padding: 1.5rem;
-font-size: 20px;
+    padding: 1.5rem;
+    font-size: 20px;
  }
  .menu__kapali{
     display: block;
@@ -322,11 +350,11 @@ font-size: 20px;
     margin-right: 0.3rem;
 }
 .app__blog-catogories{
-overflow-x: auto;
-padding: 0;
+    overflow-x: auto;
+    padding: 0;
 }
 .app__blog-catogories .item{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     margin-right: 0.4rem;
     white-space: nowrap;
@@ -341,7 +369,7 @@ padding: 0;
     margin: 1rem 0;
  }
  .app__listwrap .app_postcard .postimage{
-    height: 200px;
+    height: 170px;
 }
  .app__listwrap .app_postcard .postdate{
     font-size: 10px;
@@ -357,4 +385,90 @@ padding: 0;
     font-size: 14px;
 }
 }
+.footer-clean {
+    margin-left: 1rem;
+    padding:50px 0;
+    background-color:#fff;
+    color:#4b4c4d;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
 

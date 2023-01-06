@@ -1,0 +1,18 @@
+.containerr{
+    height: 100%;
+    width: 100%;
+    margin-top: 3.5rem;
+    display: flex;
+    margin-left: 3rem;   
+}
+.imgsize{
+    height: 350px;
+    margin-top: 0.4rem;
+    margin-right: 2rem;
+}
+.psize{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
