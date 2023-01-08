@@ -105,7 +105,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    min-width: 40%;
+    min-width: 35%;
     border-radius: 80%;
 }
 /* .app__showcase-image:hover {
@@ -188,7 +188,7 @@ body{
     margin: 2rem 0;
  }
  .app__listwrap .app_postcard .postimage{
-    height: 300px;
+    height: 290px;
     width: max-content;
 
 }
@@ -231,7 +231,7 @@ body{
 }
 @media only screen and (max-width:1600px){
     .app__listwrap .app_postcard .postimage{
-       height: 240px;
+       height: 225px;
    }
    .app__listwrap .app_postcard .posttitle{
        font-size: 12px;
