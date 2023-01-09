@@ -11,6 +11,7 @@
     <link href="../slider.css" rel="stylesheet"></link>
     <link href="../style.css" rel="stylesheet"></link>
     <link href="../post_detail.css" rel="stylesheet"></link>
+    <link href="../link.css" rel="stylesheet"></link>
 </head>
 <body>
     <nav class="app__header">
@@ -24,11 +25,10 @@
         <img class="menu__acik" src="../assets/images/acik.svg" />
 
         <ul class="app__links">
-            <a href="portfolio.html"><li>PORTFOLIO</li></a>
-            <a href="/"><li class="active">BLOG</li></a> 
+            <a href="/"><li class="active">PORTFÖY</li></a> 
             <a href="/assets/pdf/Muhammet Ali Kayacan CV.pdf" target="_blank"><li>CV</li></a>
-            <a href="hakkimda.html"><li>HAKKIMDA</li></a>
-            <a href="iletisim.html"><li>İLETİŞİM</li></a>
+            <a href="../hakkimda.html"><li>HAKKIMDA</li></a>
+            <a href="../iletisim.html"><li>İLETİŞİM</li></a>
         </ul>
     </nav>
 
@@ -45,7 +45,9 @@
             </li>
             <li>
                 <div class="slider2">
-                    <img class="img active " src="../assets/images/1.png">
+                    <img class="img active " src="../assets/images/bloglaravel00.png">
+                    <img class="img" src="../assets/images/bloglaravel11.png">
+                    <img class="img" src="../assets/images/1.png">
                     <img class="img" src="../assets/images/2.png">
                     <img class="img " src="../assets/images/ff.png">
                     <img class="img " src="../assets/images/4.png">
@@ -70,8 +72,18 @@
         </nav>
       </div>
     <h3 style="margin-bottom:1.5rem; margin-top: 2.5rem; color: brown;">(Laravel) Laravel Framework'u Kullanarak Quiz Sitesi Yapımı</h3>
-    <p style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsa commodi, quo suscipit obcaecati odio iure, dolorem perspiciatis repellendus dolore quos necessitatibus consequuntur asperiores non voluptatum mollitia qui aut adipisci dignissimos ducimus! Minima pariatur rerum, fugiat explicabo in, mollitia optio, quaerat eos reprehenderit quidem voluptatem ab quisquam animi nulla! Suscipit totam inventore distinctio aut ipsa dolore nemo neque officia, amet ut blanditiis corporis cum, voluptates minus optio magni nulla voluptatem soluta sunt vel perferendis omnis! Quos accusantium esse architecto, repellendus omnis sequi asperiores quis animi, minima deleniti quaerat sit debitis inventore aspernatur? Repellat minus asperiores debitis neque dolore commodi dicta veritatis rerum earum necessitatibus fuga quasi, sint provident quidem illum similique laborum ducimus cupiditate ex magni esse aperiam adipisci. Nisi soluta saepe odio, obcaecati, perferendis odit fuga tenetur dicta rem in velit atque ipsa, optio quasi enim a est cum? Nostrum repudiandae voluptatem iusto soluta atque, cum natus reiciendis veritatis!</p>
-  
+    <p style="font-size: 18px;">
+        Bu projede laravel 8 proje kurulumu yaptıktan sonra jetstream kurulumu yapıldı. Hazır olarak oluşan ui ve auth işlemleri kullanılmıştır ve migrationlar oluşturularak db düzenlenmiştir. Kullanıcı ayarlar kısmında bazı ayarları yapabilir. Giren kullanıcı admin değil ise sadece yayınlanmış sınavları ve açıklanan sınavların sonuçlarını görebilir.
+        <br><br>
+        Yayınlanan sınavlara giriş yapıp sorulara cevap verebilir daha sonra puan hesaplaması yapılarak kullanıcıya o testi çözen başka kullanıcıların arasında sıralamasını puan ortalamasını, doğru yanlış sayısını, katılımcı sayısını ve en yüksek puan alan ilk 10 kişiyi, sınavda yapmış olduğu doğru, yanlışlarını görebilir.
+        <br><br>
+        Giren kullanıcı eğer admin ise Quizler sayfası açılır ve oradan sınavları, soruları oluşturabilir, CRUD işlemleri yapabilir ve sınavın durumunu yayında veya pasif olarak değiştirebilir. Sınava giren kullanıcıların sınavda yaptığı doğru, yanlış, puan vs gibi bilgilerini görebilir. Belirlenen tarih, saat veya dakika sonrasında geçmiş sınav otomatik olarak pasif durumuna geçer.
+        <br><br>Projenin tamamı (db ile birlikte) github adresimde bulunmaktadır. Github adresime giderek kodlarına erişebilir ve indirebilirsiniz. </p>
+        <br>
+        <div class="wrapper">
+            <h5>Github <a href="https://github.com/Muhammet15/Quiz-laravel-8" target="_blank" id="style-2" data-replace="Proje link"><span> Proje link</span></a></h5>
+        </div>
+
 </main>
 <div class="footer-clean">
     <footer>
