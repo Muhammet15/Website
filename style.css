@@ -35,7 +35,22 @@ body{
     margin-right: auto;
     /* background-color: red; */
 }
-
+.iconlan{
+    width: 20px;
+    margin-bottom: 1.1rem;
+}
+.iconlan:active{
+    background-color: #84e287;
+    box-shadow: 1px 1px 1px 1px rgb(235, 141, 141);
+    border-radius: 100%;
+}
+.iconlan.active{
+    width: 23px;
+    background-color: red;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 5px rgb(215, 226, 152);
+    margin-bottom: 0rem;
+}
 .app__header{
     display: flex;
     flex-direction: row; /*bu ikisi soldan sağa dizmek için*/
@@ -55,8 +70,8 @@ body{
     margin-top: 0.5rem;
     margin-right: 0.5rem;
     display: flex;
-    width: 40%;
-    min-width: 350px;
+    width: 32%;
+    min-width: 340px;
     height: auto;
 }
 .app__links{
@@ -65,7 +80,8 @@ body{
     flex-direction: row;
 }
 .app__links li{
-    margin-right: 1.5rem;
+    margin-top: 25px;
+    margin-right: 2rem;
     font-size: 14px;
     font-weight: 500;
 }
@@ -84,7 +100,7 @@ body{
     padding: 0 3rem;
 }
 .app__showcase-info h1{
-    font-size: 52px;
+    font-size: 47px;
     margin: 0;
     color:#D05270 ;
     font-weight: bold;
@@ -154,6 +170,9 @@ body{
     display: none;
 }
 .menu__acik{
+    display: none;
+}
+.purple__logo{
     display: none;
 }
 .app__blog-catogories{
@@ -289,8 +308,9 @@ body{
     display: block;
     margin-top: 0.2rem;
     margin-right: 0.2rem;
+    margin-left: 0.3rem;
     width: 30%;
-    min-width: 270px;
+    min-width: 230px;
     height: auto;
 }
  .app__links{
@@ -304,6 +324,9 @@ body{
     flex-direction: column;
     background-color: #FFFF;
     transition: height 200ms ease-in-out;
+}
+.notactivee{
+    display: none;
 }
  .app__links.active{
     opacity: 1;
