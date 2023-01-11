@@ -4,10 +4,10 @@ const linkscatch = document.querySelector(".app__links");
         menukapali.addEventListener('click',()=>{ 
             linkscatch.classList.toggle("active");
             if (linkscatch.classList.contains("active")) {
-                menukapali.src ="../assets/images/acik.svg";
+                menukapali.src ="../../assets/images/acik.svg";
             } 
             else{
-                menukapali.src ="../assets/images/kapalı.svg";
+                menukapali.src ="../../assets/images/kapalı.svg";
             }
 });
     }

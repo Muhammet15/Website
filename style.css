@@ -155,7 +155,7 @@ body{
     opacity: 0.7;
 }
 .app__links2 .app__link.medium{
-    background-color: rgb(245, 80, 80);
+    background-color: rgb(235, 49, 49);
 }
 .app__links2 .app__link.medium:hover{
     opacity: 0.7;
@@ -310,7 +310,7 @@ body{
     margin-right: 0.2rem;
     margin-left: 0.3rem;
     width: 30%;
-    min-width: 230px;
+    min-width: 225px;
     height: auto;
 }
  .app__links{
