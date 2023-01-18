@@ -11,3 +11,13 @@ const linkscatch = document.querySelector(".app__links");
             }
 });
     }
+
+
+$("#example").click(function() {
+    window.location.href = '/index.html';
+});
+
+$("#example2").click(function() {
+    window.location.href='/eng/index.html';
+});
+
