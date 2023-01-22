@@ -7,7 +7,7 @@ a::before,
 a::after {
  content: '';
   position: absolute;
-  width: 100%;
+  width: auto;
   left: 0;
 }
 a::before {
