@@ -415,7 +415,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
-    margin: 1rem 0;
+    margin: 0;
  }
  .app__listwrap .app_postcard .postimage{
     height: 130px;
