@@ -104,7 +104,11 @@ footer a:not(.nav-link) {
   .portfolio-reverse {
     flex-direction: column-reverse; }
   .portfolio-reverse .text-end {
-    text-align: start !important; } }
+    text-align: start !important; } 
+#ayar{
+    padding: 1rem !important;
+  }
+  }
 
 @media print {
   [data-aos] {
