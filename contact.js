@@ -1,8 +1,6 @@
 var btn = document.getElementById('btnsend');
 var btncancel = document.getElementById('btncancel');
-btncancel.addEventListener('click',function(e){
-  history.go(0);
-});
+
 btn.addEventListener('click',function(e){
         e.preventDefault()
         var name = document.getElementById('name').value;

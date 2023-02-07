@@ -35,6 +35,12 @@ body{
     margin-right: auto;
     background-color: rgb(252, 251, 251);
 }
+.shadow-1-strong {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25),0 3px 10px 0 rgba(0,0,0,.2)!important;
+}
+.bg-white {
+    background-color: #fff!important;
+}
 .iconlan{
     width: 20px;
     margin-bottom: 1.1rem;
@@ -214,6 +220,10 @@ body{
     padding: 0 2rem;
     margin: 2rem 0;
  }
+ /* .app__listwrap .app_postcard:hover{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.25),0 1px 5px 0 rgba(0,0,0,.2)!important;
+    background-color: #ffffff;
+ } */
  .app__listwrap .app_postcard .postimage{
     height: 284px;
     width: max-content;
@@ -242,6 +252,7 @@ body{
     padding-bottom: 0.5rem;
     width: fit-content;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 .app__listwrap .app_postcard .postlink:hover{
     color: #eba3b3;
