@@ -220,10 +220,10 @@ body{
     padding: 0 2rem;
     margin: 2rem 0;
  }
- /* .app__listwrap .app_postcard:hover{
+ .app__listwrap .app_postcard:hover{
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.25),0 1px 5px 0 rgba(0,0,0,.2)!important;
     background-color: #ffffff;
- } */
+ }
  .app__listwrap .app_postcard .postimage{
     height: 284px;
     width: max-content;
